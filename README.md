@@ -1,187 +1,99 @@
 # IT-Expenditure-Analysis
 
-Overview
-
-This project presents an interactive IT Expenditure Analysis Dashboard developed using Power BI. The dashboard was designed to help organizations monitor IT-related spending across different regions, departments, and functional areas.
-The analysis compares Actual, Forecasted, and Planned expenditures to identify budget variances, spending patterns, and areas where financial optimization may be required.
-The main goal of this project was to convert raw financial data into a centralized reporting solution that supports better budgeting decisions and improves financial visibility across the organization.
-
-Business Objective
-
-Managing IT budgets across multiple teams and locations can become difficult when data is fragmented across systems.
-
-This dashboard helps answer key business questions such as:
-
-Are IT departments staying within budget?
-
-Which regions or business units contribute the highest IT costs?
-
-Where are spending inefficiencies occurring?
-
-How accurate are forecasting models compared to actual spending?
-
-Which IT functions consume the majority of the budget?
-
-The project enables stakeholders to evaluate financial performance quickly using interactive visuals and KPI tracking.
-
-Dataset Information
-
-The dataset contains month-wise IT spending records with the following major fields:
-
-Column	Description
-
-Date	Monthly transaction period
-
-Actual	Actual IT expenditure incurred
-
-Forecast	Predicted IT expenditure
-
-Plan	Approved planned IT budget
-
-IT Area	IT functional category
-
-Business Area	Department or business unit
-
-Region	Geographic operating region
-
-Cost Element Group	Expense classification category
-
-Data Cleaning & Transformation
-
-Data preparation was performed using Power Query and DAX inside Power BI.
-
-Steps Included:
-
-Removed incomplete and irrelevant records
-
-Handled null values in financial columns
-
-Corrected data types for dates and currency values
-
-Built a custom calendar table for proper time-based analysis
-
-Established relationships between dimension and fact tables
-
-Filtered zero-value records to improve reporting accuracy
+📌 Overview
 
 
-DAX Measures Created:
+This project is an interactive Power BI dashboard built to analyze and monitor IT spending across regions, business units, and IT functional areas. The dashboard compares Actual, Forecast, and Planned expenditure to identify budget trends, variances, and spending patterns.
 
-Variance Amount = Actual – Plan
 
-Variance % = (Actual – Plan) / Plan
+🎯 Objectives
 
-Forecast Accuracy
 
-Total Actual Spend
+✅ Track IT expenditure performance
 
-Total Planned Budget
+✅ Compare Actual vs Forecast vs Plan
 
-Total Forecast Spend
+✅ Identify budget variances and high-cost areas
 
-These transformations ensured accurate calculations and smoother dashboard performance.
+✅ Analyze spending across regions and IT functions
 
-Dashboard Features
+✅ Enable interactive business insights using slicers
 
-The dashboard includes multiple interactive visualizations for detailed expenditure analysis.
+🛠️ Tools Used
 
-KPI Cards
+📊 Power BI Desktop
 
-Displays:
+🔄 Power Query
 
-Total Actual Spend
+📈 DAX
 
-Total Forecast Spend
+📑 Microsoft Excel
 
-Total Planned Budget
+
+
+🧹 Data Preparation
+
+
+
+The dataset was cleaned and transformed using Power Query:
+
+Removed missing and invalid records
+
+Converted date and currency formats
+
+Created DAX measures:
 
 Variance Amount
 
-Variance Percentage
+Variance %
 
-Monthly Spending Trends
+Forecast Accuracy
 
-Clustered column and line charts were used to compare:
+Built relationships between tables for accurate analysis
 
-Actual spending
 
-Forecast values
+📊 Dashboard Highlights
 
-Planned budgets
 
-This helps identify seasonal spending behavior and unusual spikes.
+📌 KPI Cards for Actual, Forecast, Plan, and Variance
 
-Spend Distribution by IT Area
+📅 Monthly spending trend analysis
 
-A donut chart visualizes how IT spending is distributed across different functional areas such as:
+🍩 IT Area expenditure breakdown
 
-Infrastructure
+🌍 Region-wise spending comparison
 
-Functional IT
+🎛️ Interactive slicers for dynamic filtering
 
-BU Support
 
-Governance & Enablement
+🔍 Key Insights
 
-Regional Expenditure Analysis
 
-Bar charts compare spending across global regions, making it easier to identify high-cost operational areas.
+💰 Actual spending remained 3.77% below budget
 
-Interactive Filtering
+🏗️ Functional IT and Infrastructure dominate spending
 
-Users can dynamically filter the dashboard using slicers for:
+🇺🇸 USA contributes the highest IT expenditure
 
-Region
+📈 Significant spending spike observed in December
 
-Business Area
+⚙️ Governance and Enablement receive lower investment
 
-IT Area
 
-Cost Element Group
+💡 Recommendations
 
-This allows different stakeholders to analyze spending from their own perspective.
 
-Key Insights
+📋 Improve quarterly budget monitoring
 
-Actual IT expenditure remained approximately 3.7% below the planned budget, indicating overall cost control.
+📉 Reduce excessive year-end spending spikes
 
-Infrastructure and Functional IT account for the majority of organizational IT spending.
+🌎 Optimize regional expenditure allocation
 
-The USA region contributes the highest share of IT expenses.
+🔐 Increase investment in governance-related IT functions
 
-Spending significantly increases toward year-end, especially in December, suggesting bulk procurement or delayed budget utilization.
 
-Governance-related IT functions appear comparatively underfunded.
+📁 Project Structure
 
-Recommendations
-
-Improve Forecast Planning
-
-Review forecasting methods in departments showing large variances between forecast and actual spending.
-
-Monitor Year-End Spending
-
-Introduce quarterly budget reviews to prevent excessive end-of-year expenditure spikes.
-
-Optimize Regional Allocation
-
-Evaluate opportunities to balance spending more effectively across regions.
-
-Strengthen Governance Investment
-
-Increase visibility into governance and enablement functions to ensure operational sustainability.
-
-Tools & Technologies Used
-
-Power BI Desktop
-
-Power Query
-
-DAX
-
-Microsoft Excel
-
-Project Structure
 
 IT-Expenditure-Analysis/
 
@@ -191,10 +103,12 @@ IT-Expenditure-Analysis/
 
 ├── IT_Expenditure_Dataset.xlsx
 
+├── Dashboard_Screenshot.png
+
 └── README.md
 
 
-Conclusion
+🚀 Conclusion
 
-This Power BI dashboard provides a centralized and interactive view of organizational IT spending. By comparing Actual, Forecast, and Planned expenditures, the report helps stakeholders identify financial inefficiencies, monitor budget performance, and make more informed strategic decisions.
-The project demonstrates how Power BI can be used to transform raw financial data into actionable business intelligence through effective data modeling, visualization, and storytelling.
+
+This dashboard transforms raw IT financial data into actionable insights that support better budgeting, cost optimization, and strategic decision-making through interactive Power BI visualizations.
